@@ -14,6 +14,7 @@ public class userAuth {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Userid;
-    private String Email;
+    private String username;
     private String Password;
+    private String role;
 }
