@@ -1,7 +1,7 @@
 package net.engineeringdigest.journalApp.units;
 
+import lombok.Builder;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -12,11 +12,9 @@ import javax.persistence.*;
 @Table(name="car")
 public class carunits {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private  String Numberplate;
-    private  String Brand;
+    private String numberplate;
+    private String Brand;
     private String Model;
-
-
+    private int location ;
 }
+
